@@ -24,7 +24,7 @@ This exercise involves a car salesman who has a several cars that he is selling.
 
 Currently all of the files are in a single folder. Also some files have been created or changed but not committed. Our first job is to commit the changes, then to tidy up the files.
 
-1. Commit the changes to existing files with the message "Update car details for bank holiday sale".
+1. Commit any changes to existing files with the message "Update car details for bank holiday sale".
 2. Commit the new files with the message "Add new cars for bank holiday sale"
 
 Our salesman want a separate folder for luxury cars. 
@@ -32,12 +32,12 @@ Our salesman want a separate folder for luxury cars.
 1. Create a folder inside `files/cars` called `luxury`.
 2. Move all `Mercedes` and `Ferrari` files to the luxury folder and commit this change with the message "Move luxury cars to own folder"
 
-## Stop selling Italian cars
+## Stop selling Non-luxury, Italian cars
 
-Our salesman decides he no longer wants to sell Italian cars. He wants to remove the files for existing ones, and set up git to ignore all future Italian cars.
+Our salesman decides he no longer wants to sell cheap Italian cars. He wants to remove the files for existing ones, and set up git to ignore all future ones.
 
-1. Remove from git all `Fiat` and `Ferrari`.
-2. Tell git to ignore all `Fiat` and `Ferrari` cars.
+1. Remove from git all `Fiat` cars.
+2. Tell git to ignore all `Fiat`.
 
 ## Submitting the results
 

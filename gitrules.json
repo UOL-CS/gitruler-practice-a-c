@@ -1,7 +1,25 @@
 {
   "setup-files": [
+    {"path":"files/cars/vw-GW64RFT.txt", "contents":"GW64RFT"},
+    {"path":"files/cars/vw-GW64RFG.txt", "contents":"GW64RFG"},
+    {"path":"files/cars/ford-QQ63JUI.txt", "contents":" Still going strong"}
   ],
   "rules":[
     { "rule": "text", "separator":"-", "width":120, "heading":"TIDYING CARS", "double-space":true},
+    { "rule": "commit-with-message-updated-file", "score-if-correct": 10 , "path": "files/cars/ford-QQ63JUI.txt", "contents": "Update car details for bank", "ignore-case": true},
+    { "rule": "commit-with-message-doesnt-update-file", "score-if-correct": 10, "path": "files/cars/vw-GW64RFT.txt", "contents": "Update car details for bank", "ignore-case": true, "failure-message": "New files were committed alongside changes to existing ones"},
+    { "rule": "commit-with-message-updated-file", "score-if-correct": 10, "path": "files/cars/vw-GW64RFT.txt", "contents": "Add new cars for bank", "ignore-case": true},
+    { "rule": "commit-with-message-updated-file", "score-if-correct": 10, "path": "files/cars/vw-GW64RFG.txt", "contents": "Add new cars for bank", "ignore-case": true},
+    { "rule": "commit-with-message-doesnt-update-file", "score-if-correct": 5, "path": "files/cars/ford-QQ63JUI.txt", "contents": "Add new cars for bank", "ignore-case": true, "failure-message": "New files were committed alongside changes to existing ones"},
+    { "rule": "text", "separator":"-", "width":120, "heading":"LUXURY CARS", "double-space":true},
+    { "rule":"file-has-hash-in-head", "path":"files/cars/luxury/ferrari-ER04KKL.txt", "hash":"f5dfa6fbc9ee48a8b6b5ae3e50f701c13b3b1651", "score-if-correct":5},
+    { "rule":"file-has-hash-in-head", "path":"files/cars/luxury/ferrari-ZI61TTR.txt", "hash":"6431d5c5faa402307275b5b05a4ee52668447901", "score-if-correct":5},
+    { "rule":"file-has-hash-in-head", "path":"files/cars/luxury/mercedes-MC11YNB.txt", "hash":"21cb56a141f36fa7bc454f5f55fe6de792c18ea8", "score-if-correct":5},
+    { "rule":"commit-with-message-updated-file", "path":"files/cars/luxury/ferrari-ER04KKL.txt", "contents":"Move luxury cars to own folder", "ignore-case": true, "score-if-correct":5},
+    { "rule":"commit-with-message-updated-file", "path":"files/cars/luxury/ferrari-ZI61TTR.txt", "contents":"Move luxury cars to own folder", "ignore-case": true, "score-if-correct":5},
+    { "rule":"commit-with-message-updated-file", "path":"files/cars/luxury/mercedes-MC11YNB.txt", "contents":"Move luxury cars to own folder", "ignore-case": true, "score-if-correct":5},
+    { "rule": "text", "separator":"-", "width":120, "heading":"NO MORE CHEAP ITALIAN CARS", "double-space":true},
+    { "rule": "file-untracked-in-head", "path": "files/cars/fiat-PL55HBV.txt", "score-if-correct":10},
+    { "rule": "ignored", "path": "files/cars/fiat-AA11AAA.txt", "failure-message": "You must ignore all Fiats", "score-if-correct":15},    
   ]
 }
