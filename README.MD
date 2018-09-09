@@ -13,7 +13,7 @@ This repository provides you with practice of the skills that you have learned i
 
 ## Introduction
 
-This exercise involves a car salesman who has a several cars that he is selling. Each car has a file in the `files/cars`. The name of the file is the model of car followed by the registration number.
+This exercise involves a car salesman who has a several cars that he is selling. Each car has a file in the `files/cars`. The name of the file is the make of car followed by the registration number.
 
 ## Instructions
 
