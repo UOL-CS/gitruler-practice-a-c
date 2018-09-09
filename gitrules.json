@@ -1,0 +1,7 @@
+{
+  "setup-files": [
+  ],
+  "rules":[
+    { "rule": "text", "separator":"-", "width":120, "heading":"TIDYING CARS", "double-space":true},
+  ]
+}
