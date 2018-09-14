@@ -21,7 +21,7 @@ Currently all of the files are in a single folder. Also some files have been cre
 
 1. Run gitruler to initialise the exercise
 1. There are changes to some existing files since the last commit. Commit these changes with the message "Update car details for bank holiday sale".
-2. There are also some new, untracked files. Commit them with the message "Add new cars for bank holiday sale".
+2. There are also some new, untracked files in the `files/cars` folder. Commit them with the message "Add new cars for bank holiday sale".
 
 Our salesman wants a separate folder for luxury cars. 
 
