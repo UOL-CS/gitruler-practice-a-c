@@ -58,7 +58,7 @@
       "rule": "file-untracked-in-head",
       "score-if-correct": 5,
       "path": ".gitruler",
-      "failure-message": "No extra files were committed along with new car files."
+      "alternative-title": "No extra files were committed along with new car files (this will turn false if they are)."
     },
     {
       "rule": "text",
